@@ -12,6 +12,7 @@
 
 RVTEST_RV64U
 RVTEST_CODE_BEGIN
+  TEST_PASSFAIL
 
   #-------------------------------------------------------------
   # Arithmetic tests
@@ -58,7 +59,6 @@ RVTEST_CODE_BEGIN
   TEST_IMM_ZEROSRC1( 24, slti, 0, 0xfff );
   TEST_IMM_ZERODEST( 25, slti, 0x00ff00ff, 0xfff );
 
-  TEST_PASSFAIL
 
 RVTEST_CODE_END
 

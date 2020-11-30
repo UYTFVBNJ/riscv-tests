@@ -12,6 +12,7 @@
 
 RVTEST_RV64U
 RVTEST_CODE_BEGIN
+  TEST_PASSFAIL
 
   #-------------------------------------------------------------
   # Basic tests
@@ -72,7 +73,6 @@ RVTEST_CODE_BEGIN
   la a1, tdat
   sh a0, 6(a1)
 
-  TEST_PASSFAIL
 
 RVTEST_CODE_END
 

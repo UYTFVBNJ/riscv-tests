@@ -12,6 +12,7 @@
 
 RVTEST_RV64U
 RVTEST_CODE_BEGIN
+  TEST_PASSFAIL
 
   #-------------------------------------------------------------
   # Test 2: Basic test
@@ -74,7 +75,6 @@ target_3:
   )
   .option pop
 
-  TEST_PASSFAIL
 
 RVTEST_CODE_END
 

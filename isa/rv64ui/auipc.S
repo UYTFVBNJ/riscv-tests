@@ -12,6 +12,7 @@
 
 RVTEST_RV64U
 RVTEST_CODE_BEGIN
+  TEST_PASSFAIL
 
   TEST_CASE(2, a0, 10000, \
     .align 3; \
@@ -27,7 +28,6 @@ RVTEST_CODE_BEGIN
     1: sub a0, a0, a1; \
   )
 
-  TEST_PASSFAIL
 
 RVTEST_CODE_END
 

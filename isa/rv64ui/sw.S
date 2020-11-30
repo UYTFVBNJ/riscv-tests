@@ -12,6 +12,7 @@
 
 RVTEST_RV64U
 RVTEST_CODE_BEGIN
+  TEST_PASSFAIL
 
   #-------------------------------------------------------------
   # Basic tests
@@ -68,7 +69,6 @@ RVTEST_CODE_BEGIN
   TEST_ST_SRC21_BYPASS( 22, 1, 1, lw, sw, 0x22330011, 16, tdat );
   TEST_ST_SRC21_BYPASS( 23, 2, 0, lw, sw, 0x12233001, 20, tdat );
 
-  TEST_PASSFAIL
 
 RVTEST_CODE_END
 

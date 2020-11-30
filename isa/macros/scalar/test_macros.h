@@ -706,11 +706,10 @@ test_ ## testnum: \
 #-----------------------------------------------------------------------
 
 #define TEST_PASSFAIL \
-        bne x0, TESTNUM, pass; \
 fail: \
         RVTEST_FAIL; \
 pass: \
-        RVTEST_PASS \
+        RVTEST_PASS; \
 
 
 #-----------------------------------------------------------------------

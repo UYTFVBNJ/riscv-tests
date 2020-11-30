@@ -12,6 +12,7 @@
 
 RVTEST_RV64U
 RVTEST_CODE_BEGIN
+  TEST_PASSFAIL
 
   #-------------------------------------------------------------
   # Logical tests
@@ -43,7 +44,6 @@ RVTEST_CODE_BEGIN
   TEST_IMM_ZEROSRC1( 13, andi, 0, 0x0f0 );
   TEST_IMM_ZERODEST( 14, andi, 0x00ff00ff, 0x70f );
 
-  TEST_PASSFAIL
 
 RVTEST_CODE_END
 

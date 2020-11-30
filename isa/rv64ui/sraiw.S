@@ -12,6 +12,7 @@
 
 RVTEST_RV64U
 RVTEST_CODE_BEGIN
+  TEST_PASSFAIL
 
   #-------------------------------------------------------------
   # Arithmetic tests
@@ -66,7 +67,6 @@ RVTEST_CODE_BEGIN
   TEST_IMM_OP( 26, sraiw, 0x0000000000000000, 0x00e0000000000000, 28)
   TEST_IMM_OP( 27, sraiw, 0xffffffffff000000, 0x00000000f0000000, 4)
 
-  TEST_PASSFAIL
 
 RVTEST_CODE_END
 

@@ -12,6 +12,7 @@
 
 RVTEST_RV64U
 RVTEST_CODE_BEGIN
+  TEST_PASSFAIL
 
   #-------------------------------------------------------------
   # Test 2: Basic test
@@ -47,7 +48,6 @@ target_2:
     addi ra, ra, 1; \
   )
 
-  TEST_PASSFAIL
 
 RVTEST_CODE_END
 

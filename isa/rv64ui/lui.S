@@ -12,6 +12,7 @@
 
 RVTEST_RV64U
 RVTEST_CODE_BEGIN
+  TEST_PASSFAIL
 
   #-------------------------------------------------------------
   # Basic tests
@@ -24,7 +25,6 @@ RVTEST_CODE_BEGIN
 
   TEST_CASE( 6, x0, 0, lui x0, 0x80000 );
 
-  TEST_PASSFAIL
 
 RVTEST_CODE_END
 

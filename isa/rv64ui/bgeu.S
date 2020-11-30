@@ -12,6 +12,7 @@
 
 RVTEST_RV64U
 RVTEST_CODE_BEGIN
+  TEST_PASSFAIL
 
   #-------------------------------------------------------------
   # Branch tests
@@ -64,7 +65,6 @@ RVTEST_CODE_BEGIN
     addi x1, x1, 1; \
   )
 
-  TEST_PASSFAIL
 
 RVTEST_CODE_END
 
