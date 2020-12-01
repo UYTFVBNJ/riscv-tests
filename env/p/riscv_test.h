@@ -228,14 +228,18 @@ reset_vector:                                                           \
 //-----------------------------------------------------------------------
 
 #define RVTEST_CODE_END                                                 \
-        j pass;
+        j pass;                                                         \
+        nop;nop;nop;nop;nop;
 
 //-----------------------------------------------------------------------
 // Pass/Fail Macro
 //-----------------------------------------------------------------------
 
 #define RVTEST_PASS                                                     \
-.word 0x7f2a214b
+        lui x1, %hi(0x7f2a214b);                                        \
+        addi x1, x1, %lo(0x7f2a214b);                                   \
+        nop;nop;nop;nop;nop;nop;                                        \
+        .word 0x7f2a214b
         // fence;                                                          \
         li TESTNUM, 1;                                                  \
         li a7, 93;                                                      \
@@ -244,7 +248,9 @@ reset_vector:                                                           \
 
 #define TESTNUM gp
 #define RVTEST_FAIL                                                     \
-.word 0x7f2a214b
+        li x1, 0;                                                       \
+        nop;nop;nop;nop;nop;nop;                                        \
+        .word 0x7f2a214b
         // fence;                                                          \
 1:      beqz TESTNUM, 1b;                                               \
         sll TESTNUM, TESTNUM, 1;                                        \
